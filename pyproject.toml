@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-slack"
+version = "0.1.0"
+description = "Slack MCP (制御中枢) - Socket Mode を使った MCP 実装"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "slack-bolt>=1.18.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+mcp-slack = "mcp_slack.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
