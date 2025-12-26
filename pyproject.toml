@@ -11,6 +11,7 @@ requires-python = ">=3.8"
 dependencies = [
     "slack-bolt>=1.18.0",
     "python-dotenv>=1.0.0",
+    "requests>=2.32.5",
 ]
 
 [project.scripts]
